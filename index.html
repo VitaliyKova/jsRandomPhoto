@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фото дня с Unsplash</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; }
+        img { max-width: 80%; border-radius: 8px; }
+        .info { margin: 10px 0; }
+        .like-button { padding: 10px 20px; background-color: #0073e6; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>Фото дня</h1>
+    <img id="photo" alt="Фото дня">
+    <div class="info">
+        <p>Фото от: <span id="photographer"></span></p>
+        <button class="like-button" onclick="likePhoto()">Лайк <span id="like-count">0</span></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
